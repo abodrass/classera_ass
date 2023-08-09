@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cn{
+            width: 1fr;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .anim div{
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border-style: solid; 
+            border-left-color: transparent;
+            animation-name: spn;
+            animation-duration:3s;
+            animation-iteration-count: infinite;
+            
+        }
+        .one{ 
+            
+            border-color: rebeccapurple;
+            width: 100px;
+            height:100px;
+        }
+        .tow{
+            border-color: cadetblue ;
+            width: 125px;
+            height: 125px;
+            animation-delay: 1s;
+        }
+        .thr{
+            border-color: tan ;
+            width: 150px;
+            height: 150px;
+            animation-delay: 2s;
+        }
+        .anim:hover{
+            animation-play-state: paused ;
+        }
+        @keyframes spn{
+            to{
+                transform: rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+<body class="cn">
+        <div class="anim">
+        
+        
+        <div class="thr">
+            <div class="tow ">
+            <div class="one"></div>
+        </div>
+        </div>
+        
+        </div>
+</body>
+</html>
